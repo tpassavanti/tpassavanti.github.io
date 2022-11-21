@@ -14,13 +14,13 @@ let myButton = document.querySelector("button");
 myButton.onclick = () => {
     setUserName();
 };
-let myHeading = document.querySelector("h1");
+let myHeading = document.getElementById("welcome");
 
 if (!localStorage.getItem("name")) {
     setUserName();
   } else {
     const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Mozilla is cool, ${storedName}`;
+    myHeading.textContent = `Welcome ${storedName}!`;
   }
 
 
@@ -31,7 +31,7 @@ function setUserName() {
     }
     else {
         localStorage.setItem("name", myName);
-        myHeading.textContent = `Mozilla is cool, ${myName}`;
+        myHeading.textContent = `Welcome ${storedName}!`;
     }
     
 }
