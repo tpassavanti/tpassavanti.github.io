@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 100px;
+    background-color: #01855c;
+}
+
+h1 {
+    font-size: 60px;
+    /* text-align: center; */
+    margin: 0;
+    padding: 20px 0;
+    color: #01855c;
+    text-shadow: 3px 3px 1px black;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color:darkgrey;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+img,
+.buttonGrid {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.button {
+    font-size: 24px;
+    align-items: center;
+}
