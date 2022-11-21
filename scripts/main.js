@@ -16,16 +16,13 @@ myButton.onclick = () => {
 };
 let myHeading = document.querySelector("h1");
 
-let storedName = localStorage.getItem("name");
-
-alert(storedName)
-
-if (!storedName) {
+if (!localStorage.getItem("name")) {
     setUserName();
-} else {
-    storedName = localStorage.getItem("name");
-}
-myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  } else {
+    const storedName = localStorage.getItem("name");
+    myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  }
+
 
 function setUserName() {
     const myName = prompt("Please enter your name.");
